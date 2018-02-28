@@ -1,0 +1,106 @@
+\documentclass[a4paper, 10pt, twocolumn]{article}
+% Sowohl LaTeX als auch pdfLaTeX können benutzt werden, um das Manuskript zu erstellen.
+
+% Bitte öffnen sie diese Datei mit utf8 Zeichenkodierung!!!
+\usepackage[utf8]{inputenc}         % Schriftkodierung dieser Datei
+% \usepackage[german]{babel}          % für deutsche Dokumente
+
+\usepackage{graphicx}               % optional für Grafiken
+\usepackage{tabularx}               % optional für Tabellen
+\usepackage{multirow}               % optional für Tabellen
+\usepackage{url}                % optional für Internet Links
+
+\usepackage[small,bf]{caption2}     % bitte für Bildunterschriften verwenden
+\usepackage{parskip}
+\usepackage{titlesec}
+\usepackage{amsmath}                % optional für Formeln
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+
+%\usepackage{showframe}
+
+\titleformat{\section}{\normalfont\large\bfseries}{\thesection}{}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesection}{}{}
+\titleformat{\paragraph}{\normalfont\bfseries}{\theparagraph}{}{}
+\titlespacing{\section}{0pt}{6pt}{-1pt}
+\titlespacing{\subsection}{0pt}{3pt}{-1pt}
+\titlespacing{\paragraph}{0pt}{3pt}{-1pt}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}    %für Tabellen mit tabularx
+
+% Definition der Seitenränder
+\addtolength{\textwidth}{2.1cm}
+\addtolength{\topmargin}{-2.4cm}
+\addtolength{\oddsidemargin}{-1.1 cm}
+\addtolength{\textheight}{4.5cm}
+\setlength{\columnsep}{0.7cm}
+
+\pagestyle{empty}                   % weder Kopf- noch Fußzeile auf 1. Seite
+
+\begin{document}
+
+\date{}                                         % kein Datum auf 1. Seite
+
+\title{\vspace{-8mm}\textbf{\large
+How Masking Affects Auditory Objects Of Beamformed Sounds}}
+
+% Hier die Namen und Daten der beteiligten Autoren eintragen
+\author{
+Julian Linke$^1$, Florian Wendt$^2$, Franz Zotter$^2$, Matthias Frank$^2$\\
+$^1$ \emph{\small University of Music and Performing Arts, 8010 Graz, Austria, Email: julianweblinke@gmail.com}\\
+$^2$ \emph{\small Institute of Electronic Music and Acoustics, Univ. Music and Performing Arts, 8010 Graz, Austria,}\\
+\emph{\small Email: \{wendt, zotter, frank\}@iem.at}} \maketitle
+\thispagestyle{empty}           % weder Kopf- noch Fußzeile auf Folgeseiten
+% Beginn des eigentlichen Manuskripts
+\section*{Abstract}
+\label{sec:Abstract} 
+Sound beams steered into a room modify the balance between wall reflections and direct sound. To some extent, this not only enables lateral auditory object positioning between direct sound and wall reflections, but also in distance, as the level of diffuse reverberation is influenced by directivity. These features made the icosahedral loudspeaker array (IKO), a spherical beamformer, an interesting instrument in electroacoustic music.
+In agreement with studies on the precedence effect, previous experiments with the IKO indicated a dependency of the perceived location on how transient the sound is:  Precedence is stronger for transient sounds, therefore these sounds are more strongly determined by the direct sound, hence appear closer to the IKO than continuous sounds.
+This contribution investigates how maskers reduce this impact of the precedence effect on transient sounds. For compositions, the experiment of our contribution discusses how far maskers are useful to regain a larger positioning range for transient auditory objects if (a) an audible masker is presented accompanying the transient sound, (b) the direct sound of the transient sound is as quiet to fall below the threshold of hearing, in contrast to the beamforming-emphasized wall reflections.
+
+\section*{Introduction}
+\label{sec:Introduction} 
+
+\section*{Experiment on Localization}
+\label{sec:Experiment on Localization} 
+
+\subsection*{Method}
+\label{sec:Method}
+
+\input{./figures/fig_diagram_CUBE} %% include figure of example
+
+\subsection*{Results}
+\label{sec:Results}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{./figures/center.eps}
+	\caption{results center}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=0.5]{./figures/offcenter.eps}
+	\caption{results off-center}
+\end{figure}
+
+\begin{thebibliography}{5}
+\bibitem{ArticleReference}
+Schall, A.: How to write a manuscript. Acta Acustica united with
+Acustica 90 (2004), 2203-2503
+\bibitem{BookReference}
+Klang, B.: Akustik im Überblick. Schall und Rauch Verlag, Stadt,
+2010
+\bibitem{URLReference}
+DAGA 2018 Homepage, URL:\\
+\url{http://www.2018.daga-tagung.de//}
+\bibitem{PDFCreator}
+PDFCreator, URL:\\
+\url{http://sourceforge.net/projects/pdfcreator}
+\bibitem{Ghostware}
+Free software Ghostview and Ghostscript, URL:\\
+\url{http://www.cs.wisc.edu/~ghost/}
+\end{thebibliography}
+\end{document}
